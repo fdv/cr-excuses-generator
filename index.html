@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script>
+    var excuses = [
+"The meta is fucked up",
+"My opponent had hc",
+"My opponent had mu",
+        "My 3 years old sister launched the game on another device",
+"My opponent was playing so many dumb moves they ended outplaying me",
+"The game crashed on me when he played ebarb / rage",
+"My starting hand was shit",
+"I took the wrong deck",
+"My father restarted our internet access",
+"I was in the car and we got into a tunnel",
+"My opponent first play was zappy / rage and I missclicked on the lava",
+"I could not concentrate because of mosquitos",
+"I was testing a new deck",
+"My opponent was playing xbow",
+"My chair broke during the game"
+
+    ];
+
+    function show() {
+        document.getElementById("excuse").innerHTML = excuses[Math.round(Math.random()*(excuses.length-1))];
+    }
+
+</script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Clash Royale Excuse generator</title>
+  </head>
+  <body onload="show()">
+      <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">I lost because...</h1>
+        <p class="lead" id="excuse">
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="show()">More excuses</a>
+
+      </div>
+        <p>A stupid, quick and dirty thing by <a href="https://twitter.com/fdevillamil">Fred</a>
+  </div>
+  </body>
+</html>
+
+
+
+
+
