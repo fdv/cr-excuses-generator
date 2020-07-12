@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script>
+    var excuses = [
+        "La méta est pourrie",
+        "Mon adversaire avait hc",
+        "Mon adversaire avait mu",
+        "Ma petite soeur de 3 ans a lancé le jeu sur mon autre téléohone",
+        "Mon adversaire était tellement nul qu'il a fini par m'outplay",
+        "Le jeu a crashé quand il a posé son BBE/rage",
+        "Ma main de départ était pourrie",
+        "Je me suis trompé de deck",
+        "Mon père a redémarré la box internet",
+        "Je suis passé sous un tunnel",
+        "Mon adversaire a joué zappy / rage au pont first play, et j'ai missclick sur le lava",
+        "Les moustiques m'empêchaient de me concentrer",
+        "Je testais un nouveau deck",
+        "Mon adversaire jouait arcx",
+        "Ma chaise a cassé pendant la partie",
+        "J'avais les doigts qui collent",
+        "J'avais les doigts qui glissent",
+        "J'avais les doigts gelés",
+        "J'y voyais rien à cause du soleil sur l'écran"
+
+    ];
+
+    function show() {
+        document.getElementById("excuse").innerHTML = excuses[Math.round(Math.random()*(excuses.length-1))];
+    }
+
+</script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Clash Royale Excuse generator</title>
+  </head>
+  <body onload="show()">
+      <div class="container">
+             <img src="maxresdefault.jpg" alt="highly skilled deck" class="img-fluid" />
+      <div class="jumbotron">
+        <h1 class="display-4">J'ai perdu parce que...</h1>
+        <p class="lead" id="excuse">
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="show()">More excuses</a>
+        <hr class="my-4">
+        <p>Un truc débile par <a href="https://twitter.com/fdevillamil">Fred</a>
+      </div>
+  </div>
+  </body>
+</html>
+
+
+
+
+
